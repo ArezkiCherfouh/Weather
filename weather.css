@@ -1,0 +1,127 @@
+body {
+    background-color: #333;
+    color: #fff;
+    padding-top: 30px;
+}
+.container,.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info {
+    color: #b30000;
+    background-color: #ffe6e6;
+    border: 1px solid #ff0000;
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: fit-content;
+    max-width: 90%;
+    margin: 30px auto;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.15s;
+}
+.godark {
+    font-size: 40px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.15s;
+    width: 90%;
+    box-shadow: 0 0 7px #000000;
+}  
+.golight {
+    font-size: 40px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    transition: 0.15s;
+    width: 90%;
+    box-shadow: 0 0 7px #fff;
+}
+.search {
+    display: grid;
+    grid-template-columns: 80% 1fr;
+    width: 90%;
+    column-gap: 10px;
+} 
+.city {
+    border: none;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.lightcity {
+    border: none;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    padding: 10px;
+    background-color: gray;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.lightcity::placeholder{
+    color: white;
+}
+.subbtn {
+    background-color: rgb(4, 255, 0);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    box-shadow: 1px 1px 3px rgb(62, 237, 62);
+    transition: 0.2s;
+}
+.temp,.intro,.goes,.discr {
+    margin-bottom: 0px;
+    font-size: 25px;
+}
+.goes,.temp {
+    text-align: center;
+}
+@media (min-width:843px) {
+    .subbtn {
+        font-size: 22px;
+    }
+    .subbtn:hover {
+        transform: scale(1.05);
+        box-shadow: 1px 1px 3px rgb(78, 176, 241);
+    }
+    .temp,.discr,.goes {
+        font-size: 30px;
+    }
+    .search {
+        width: 80%;
+    }
+}
+@media (max-width: 399px) {
+    .subbtn {
+        font-size: 100%;
+        font-weight: 500;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .search {
+        display: grid;
+        grid-template-columns: 80% 1fr;
+        width: 90%;
+        column-gap: 5px;
+    } 
+}
+.subbtn:active {
+    transform: scale(0.9);
+    box-shadow: 1px 1px 3px rgb(0, 252, 244);
+}
