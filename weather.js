@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         const city = document.querySelector(".cityInput").value;
         const resultDiv = document.querySelector(".result");
         try {
-            const res = await fetch(`http://127.0.0.1:8000/weather?city=${city}`);
+            const res = await fetch(`https://weather-backend-tn4l.onrender.com/weather?city=${city}`);
             const data = await res.json();
             if (data.error) {
                 resultDiv.innerHTML = `<p class="info">⚠️ ${data.error}</p>`;
