@@ -1,5 +1,5 @@
 let addsound=new Audio('create.wav');
-addsound.preload='auto';
+
 function playaddsound() {
     addsound.currentTime=0;
     addsound.play();
