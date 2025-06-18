@@ -29,7 +29,6 @@ body {
     border-radius: 30px;
     background-color: #333;
     color: #fff;
-    cursor: pointer;
     transition: 0.15s;
     width: 90%;
     box-shadow: 0 0 7px #000000;
@@ -40,7 +39,6 @@ body {
     border-radius: 30px;
     background-color: #fff;
     color: black;
-    cursor: pointer;
     transition: 0.15s;
     width: 90%;
     box-shadow: 0 0 7px #fff;
@@ -92,9 +90,11 @@ body {
 .goes,.temp {
     text-align: center;
 }
+
 @media (min-width:843px) {
     .subbtn {
         font-size: 22px;
+        cursor: pointer;
     }
     .subbtn:hover {
         transform: scale(1.05);
@@ -105,6 +105,12 @@ body {
     }
     .search {
         width: 80%;
+    }
+    .godark,.golight{
+        cursor: pointer;
+    }
+    .godark:hover,.golight:hover{
+        transform: scale(1.05);
     }
 }
 @media (max-width: 399px) {
@@ -124,4 +130,7 @@ body {
 .subbtn:active {
     transform: scale(0.9);
     box-shadow: 1px 1px 3px rgb(0, 252, 244);
+}
+.godark:active,.golight:active{
+    transform: scale(0.9);
 }
